@@ -31,16 +31,16 @@ export default function Portfolio() {
                 </div>
               </div>
               
-              {p.driveUrl && (
+              {(p.driveUrl || p.projectUrl) && (
                 <div className="px-6 pb-6 pt-2">
                   <a 
-                    href={p.driveUrl} 
+                    href={p.driveUrl || p.projectUrl} 
                     target="_blank" 
                     rel="noreferrer" 
                     onClick={(e) => e.stopPropagation()} 
                     className="inline-flex items-center gap-1.5 text-xs text-brand-accent hover:text-brand-glow hover:underline transition-all font-medium"
                   >
-                    View Original Asset on Drive <ExternalLink className="h-3.5 w-3.5" />
+                    {p.driveUrl ? 'View Original Asset on Drive' : 'View Project'} <ExternalLink className="h-3.5 w-3.5" />
                   </a>
                 </div>
               )}
@@ -60,14 +60,14 @@ export default function Portfolio() {
                     <span className="text-[10px] font-mono uppercase tracking-widest text-brand-accent">{selected.category}</span>
                     <h3 className="text-xl font-bold text-white mt-0.5">{selected.title}</h3>
                   </div>
-                  {selected.driveUrl && (
+                  {(selected.driveUrl || selected.projectUrl) && (
                     <a 
-                      href={selected.driveUrl} 
+                      href={selected.driveUrl || selected.projectUrl} 
                       target="_blank" 
                       rel="noreferrer" 
                       className="inline-flex items-center gap-1.5 bg-brand-accent hover:bg-brand-accent/90 text-white text-xs font-semibold px-3 py-2 rounded-lg transition-all shadow-md shadow-brand-accent/10"
                     >
-                      Drive Link <ExternalLink className="h-3 w-3" />
+                      {selected.driveUrl ? 'Drive Link' : 'View Project'} <ExternalLink className="h-3 w-3" />
                     </a>
                   )}
                 </div>

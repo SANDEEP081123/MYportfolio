@@ -12,10 +12,11 @@ export const personalInfo = {
 };
 
 export const skillsData = {
-  "Image Processing & Editing": ["Adobe Photoshop", "Pen Tool", "Clipping Paths", "Masking", "Object Selection", "Image Tracing", "Segmentation", "Colour Mapping"],
+  
   "Programming & Web": ["HTML5", "CSS3", "Bootstrap", "JavaScript", "Python", "C", "C++", "Java Fundamentals", "OOP", "Data Structures"],
   "Tools & Databases": ["MySQL", "MS Excel", "MS Word", "Git"],
-  "Core Strengths": ["Visual Accuracy", "High-Volume Processing", "Attention to Detail", "Analytical Thinking", "Quick Adaptation"]
+  "Core Strengths": ["Visual Accuracy", "High-Volume Processing", "Attention to Detail", "Analytical Thinking", "Quick Adaptation"],
+  "Image Processing & Editing": ["Adobe Photoshop", "Pen Tool", "Clipping Paths", "Masking", "Object Selection", "Image Tracing", "Segmentation", "Colour Mapping"],
 };
 
 export const educationData = [
@@ -63,15 +64,16 @@ export const projectsData = [
   //   tools: ["Photoshop Actions", "Scripting", "ICC Profiles"],
   //   date: "2025"
   // },
-  // {
-  //   id: "proj-2",
-  //   title: "Campus to Corporate Brand Identity System",
-  //   category: "branding",
-  //   description: "Engineered a comprehensive professional brand system, standardizing vector assets.",
-  //   imageUrl: "https://images.unsplash.com/photo-1626785774573-4b799315345d?auto=format&fit=crop&w=800&q=80",
-  //   tools: ["Adobe Illustrator", "Figma"],
-  //   date: "2026"
-  // },
+   {
+     id: "proj-2",
+     title: "TODOS: Personal Portfolio Website",
+     category: "web-development",
+     description: "simple portfolio website built using HTML, CSS, and JavaScript to showcase my projects and skills. The website features a clean and responsive design, allowing visitors to easily navigate through my work and learn more about my background.",
+     imageUrl: "/images/TODO.png",
+     tools: ["JavaScript", "VS Code", "GitHub Pages"],
+     date: "2026",
+     projectUrl: "https://sandeep081123.github.io/sdpTODOLIST/"
+   },
   {
     id: "proj-3",
     title: "Advanced Pen Tool & Path Creation Isolation",
