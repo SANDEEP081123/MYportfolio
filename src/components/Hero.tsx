@@ -34,7 +34,7 @@ export default function Hero() {
           </span>
           <br />
           <span className="bg-gradient-to-r from-brand-accent to-brand-glow bg-clip-text text-transparent glow-text-indigo">
-            Precision Image Processing
+            Full Stack Developer 
           </span>
         </motion.h1>
 
