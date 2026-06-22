@@ -1,7 +1,7 @@
 export const personalInfo = {
   name: "Sandeep Nelapogula",
   title: "Image Processing & Computer Vision Specialist",
-  bio: "Detail-oriented B.Sc. Computer Science graduate with hands-on Adobe Photoshop expertise in object segmentation. High analytical competence and proven capacity for processing high-volume assets with consistent accuracy. Eager to leverage technical skills and creative problem-solving in a dynamic image processing role.",
+  bio: "Motivated B.Sc.Computer Science graduate student with a strong understanding of computer systems and problem-solving, eager to contribute to innovative projects and grow in the tech industry. Proficient in programming languages, web development, and image processing techniques, with a keen eye for detail and a passion for learning. Seeking opportunities to apply my skills and drive impactful results in a dynamic work environment.",
   email: "sandeepnelapogula03@gmail.com",
   phone: "+91 7675967843",
   location: "Hyderabad, India",
@@ -74,24 +74,24 @@ export const projectsData = [
      date: "2026",
      projectUrl: "https://sandeep081123.github.io/sdpTODOLIST/"
    },
-  {
-    id: "proj-3",
-    title: "Advanced Pen Tool & Path Creation Isolation",
-    category: "image-processing",
-    description: "Executed high-precision clipping paths and clean object background isolation using the Adobe Photoshop Pen Tool, optimized for production-ready AI image training annotation pipelines.",
-    imageUrl: "/images/path-creation.png",
-    tools: ["Adobe Photoshop", "Pen Tool", "Clipping Paths", "Object Isolation"],
-    date: "2025",
-    driveUrl: "https://drive.google.com/file/d/1evm2mJqI9VjtWlzB4lqEctL6teDxgO78/view?usp=sharing"
-  },
-  {
-    id: "proj-4",
-    title: "High-Fidelity Image Tracing & Raster Refinement",
-    category: "image-processing",
-    description: "Transformed complex artwork into premium layouts using professional threshold mapping, custom image tracing techniques, and high-density vector edge configurations.",
-    imageUrl: "/images/image-tracing.png",
-    tools: ["Adobe Photoshop", "Image Tracing", "Masking", "Vector Conversion"],
-    date: "2025",
-    driveUrl: "https://drive.google.com/file/d/1XM3TZCV6jWF3JYiJ5Xiqdps3YQVIa6a8/view?usp=sharing"
-  }
+  //{
+  //  id: "proj-3",
+  //  title: "Advanced Pen Tool & Path Creation Isolation",
+  //  category: "image-processing",
+  //  description: "Executed high-precision clipping paths and clean object background isolation using the Adobe Photoshop Pen Tool, optimized for production-ready AI image training annotation pipelines.",
+  //  imageUrl: "/images/path-creation.png",
+  //  tools: ["Adobe Photoshop", "Pen Tool", "Clipping Paths", "Object Isolation"],
+  //  date: "2025",
+  //  driveUrl: "https://drive.google.com/file/d/1evm2mJqI9VjtWlzB4lqEctL6teDxgO78/view?usp=sharing"
+  //},
+  //{
+  //  id: "proj-4",
+  //  title: "High-Fidelity Image Tracing & Raster Refinement",
+  //  category: "image-processing",
+  //  description: "Transformed complex artwork into premium layouts using professional threshold mapping, custom image tracing techniques, and high-density vector edge configurations.",
+  //  imageUrl: "/images/image-tracing.png",
+  //  tools: ["Adobe Photoshop", "Image Tracing", "Masking", "Vector Conversion"],
+  //  date: "2025",
+  //  driveUrl: "https://drive.google.com/file/d/1XM3TZCV6jWF3JYiJ5Xiqdps3YQVIa6a8/view?usp=sharing"
+  // }
 ];
