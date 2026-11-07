@@ -12,6 +12,7 @@ const Contact = () => {
   const [terminalLogs, setTerminalLogs] = useState([
     'INIT_TRANSMISSION_NODE // READY',
     'AWAITING_INPUT_PACKETS...',
+    'NODE_LOCATION: HYDERABAD, INDIA',
   ]);
 
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -29,7 +30,7 @@ const Contact = () => {
     setTerminalLogs((prev) => [
       ...prev,
       `ENCRYPTING_PAYLOAD: [${formData.name || 'ANON_USER'}]`,
-      'RESOLVING_GATEWAY: sandeepnelapogula68@gmail.com...',
+      'RESOLVING_GATEWAY: sandeepnelapogula03@gmail.com...',
     ]);
 
     setTimeout(() => {
@@ -39,7 +40,7 @@ const Contact = () => {
       setTerminalLogs((prev) => [
         ...prev,
         'DISPATCH_SUCCESS: 200 OK // TRANSMISSION LOGGED',
-        'STATUS: ACKNOWLEDGED BY SANDEEP',
+        'STATUS: ACKNOWLEDGED BY SANDEEP NELAPOGULA',
       ]);
     }, 1200);
   };
@@ -59,7 +60,7 @@ const Contact = () => {
             ESTABLISH <span className="text-cyan-400">TRANSMISSION</span>
           </h2>
           <p className="font-mono text-xs text-slate-400 mt-2 max-w-xl">
-            [ SECURE DISPATCH PROTOCOL // CONNECT DIRECTLY WITH SANDEEP ]
+            [ SECURE DISPATCH PROTOCOL // CONNECT DIRECTLY WITH SANDEEP NELAPOGULA ]
           </p>
         </div>
 
@@ -94,14 +95,14 @@ const Contact = () => {
             </div>
 
             {/* Direct Channel Cards */}
-            <div className="rounded-2xl border border-slate-800 bg-slate-950/60 backdrop-blur-xl p-6 flex flex-col gap-4">
-              <h3 className="font-orbitron font-bold text-sm text-white uppercase tracking-wider">
-                DIRECT COMM CHANNELS
+            <div className="rounded-2xl border border-slate-800 bg-slate-950/60 backdrop-blur-xl p-6 flex flex-col gap-3">
+              <h3 className="font-orbitron font-bold text-sm text-white uppercase tracking-wider mb-1">
+                VERIFIED COMM CHANNELS
               </h3>
 
               {/* Email */}
               <a
-                href="mailto:sandeepnelapogula68@gmail.com"
+                href="mailto:sandeepnelapogula03@gmail.com"
                 onMouseEnter={() => soundFx.playHover()}
                 onClick={() => soundFx.playClick()}
                 className="group flex items-center gap-3.5 p-3 rounded-xl border border-slate-800/80 bg-black/40 hover:border-cyan-400/50 hover:bg-cyan-950/20 transition-all"
@@ -111,8 +112,28 @@ const Contact = () => {
                 </div>
                 <div>
                   <div className="text-[10px] font-mono text-slate-400">EMAIL INBOX</div>
-                  <div className="text-xs sm:text-sm font-mono text-slate-200 group-hover:text-cyan-300 transition-colors">
-                    sandeepnelapogula68@gmail.com
+                  <div className="text-xs font-mono text-slate-200 group-hover:text-cyan-300 transition-colors">
+                    sandeepnelapogula03@gmail.com
+                  </div>
+                </div>
+              </a>
+
+              {/* LinkedIn */}
+              <a
+                href="https://linkedin.com/in/sandeep-nelapogula"
+                target="_blank"
+                rel="noopener noreferrer"
+                onMouseEnter={() => soundFx.playHover()}
+                onClick={() => soundFx.playClick()}
+                className="group flex items-center gap-3.5 p-3 rounded-xl border border-slate-800/80 bg-black/40 hover:border-sky-400/50 hover:bg-sky-950/20 transition-all"
+              >
+                <div className="w-9 h-9 rounded-lg bg-sky-950/40 border border-sky-500/30 flex items-center justify-center text-sky-400 font-bold">
+                  in
+                </div>
+                <div>
+                  <div className="text-[10px] font-mono text-slate-400">LINKEDIN PROFILE</div>
+                  <div className="text-xs font-mono text-slate-200 group-hover:text-sky-300 transition-colors">
+                    linkedin.com/in/sandeep-nelapogula
                   </div>
                 </div>
               </a>
@@ -131,11 +152,17 @@ const Contact = () => {
                 </div>
                 <div>
                   <div className="text-[10px] font-mono text-slate-400">GITHUB REPOSITORY</div>
-                  <div className="text-xs sm:text-sm font-mono text-slate-200 group-hover:text-violet-300 transition-colors">
+                  <div className="text-xs font-mono text-slate-200 group-hover:text-violet-300 transition-colors">
                     github.com/SANDEEP081123
                   </div>
                 </div>
               </a>
+
+              {/* Location Badge */}
+              <div className="flex items-center gap-3 p-2.5 rounded-xl border border-slate-900 bg-black/30 font-mono text-xs text-slate-400">
+                <span className="text-cyan-400">📍</span>
+                <span>HYDERABAD, TELANGANA, INDIA</span>
+              </div>
             </div>
           </div>
 
@@ -185,7 +212,7 @@ const Contact = () => {
                     required
                     value={formData.subject}
                     onChange={handleChange}
-                    placeholder="Project Inquiry / Full-Stack Architecture / WebGL"
+                    placeholder="Project Collaboration / Full-Stack Architecture / WebGL"
                     className="w-full px-4 py-3 rounded-xl font-mono text-sm bg-black/60 border border-slate-800 text-white placeholder-slate-600 focus:outline-none focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400 transition-all"
                   />
                 </div>
